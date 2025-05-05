@@ -1,0 +1,5 @@
+n = str(input('Nome completo: ')).strip()
+print('Seja bem-vindo(a)')
+separado = n.split()
+print('Seu primeiro nome é',separado[0].capitalize())
+print('Seu último nome é',separado[-1].capitalize())

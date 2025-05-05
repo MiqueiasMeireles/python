@@ -1,0 +1,16 @@
+lista = []
+peso = []
+resposta=""
+while resposta in "S":
+    nome=str(input("Nome: "))
+    kg=float(input("Peso: "))
+    lista.append(nome)
+    peso.append(kg)
+    resposta=str(input("Deseja continuar:[S/N] ")).strip().upper()
+    if resposta == "N":
+        break
+print("=-"*30)
+print("Os dados foram: {}".format(lista))
+print("Ao todo voce cadastrou {} pessoas.".format(len(nome)))
+print("O maior peso foi de {} que foi [{}]".format(max(peso),lista[0]))
+print("O menor peso foi de {}".format(min(peso)))
